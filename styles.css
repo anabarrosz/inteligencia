@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b3b2b2; /* Cor de fundo suave e clara */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(133, 133, 133); /* Fundo branco para o cabeçalho */
+    border-bottom: 1px solid #e0e0e0; /* Borda inferior clara */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+main.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.ia-block-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ia-block {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.top-block, .bottom-block {
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Tamanho aumentado */
+    height: 200px;
+    padding: 25px; /* Padding aumentado para maior área clicável */
+    text-decoration: none;
+    color: #333;
+    background-color: #ffffff; /* Cor de fundo clara para os botões */
+    border: 2px solid #d3d3d3; /* Borda clara */
+    border-radius: 12px; /* Borda arredondada mais suave */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #f0f0f0; /* Cor de fundo clara ao passar o mouse */
+    color: #333;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.button-content {
+    text-align: center;
+}
+
+.button h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.button p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    background-color: rgb(133, 133, 133); /* Fundo branco para o rodapé */
+    color: #ffffff; /* Cor do texto escura para contraste */
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0; /* Borda superior clara */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
